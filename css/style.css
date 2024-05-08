@@ -1,0 +1,51 @@
+#skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 100px;
+}
+
+nav {
+    background-color: #d08b15;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+
+}
+nav a {
+    color: #000000;
+    margin-right: 5px;
+    display: block;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif
+}
+
+p, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: luminari, fantasy
+}
+
+#about h2 {
+    margin-bottom: 0;
+
+}
+
+#about p {
+    margin-top: 0;
+}
+
+.image-grid img {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+    height: 150px;
+}
