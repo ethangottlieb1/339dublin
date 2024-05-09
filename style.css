@@ -83,7 +83,7 @@ p {
 }
 
 .image-grid img {
-    border: 2px solid #000000;
+    border: 2px solid #0000005b;
     border-radius: 10px;
     padding: 5px;
     height: 150px;
@@ -105,10 +105,10 @@ p {
     transform: scale(1.7);
 }
 
-/* #gallery {
+#gallery {
     display: grid;
     place-items: center;
-} */
+}
 
 article {
     border: 1px solid #ccc;
@@ -144,6 +144,11 @@ article:hover {
     display: block;
     margin: 0 auto 20px auto;
     border-radius: 10px;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 @media (max-width: 768px) {
