@@ -142,7 +142,7 @@ article:hover {
 .daily-image {
     height: 150px;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 5px 20px auto;
     border-radius: 10px;
 }
 
@@ -203,4 +203,9 @@ article:hover {
 
 .current::after{
     content: "\2618";
+}
+
+.blog-pic{
+    display: flex;
+    overflow: scroll;
 }
