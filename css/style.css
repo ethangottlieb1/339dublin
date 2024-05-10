@@ -189,3 +189,18 @@ article:hover {
     }
     
 }
+
+.current{
+    font-size: 36px;
+    font-family: copperplate;
+    border: 2px solid #FF7900;
+    color: #000000;
+}
+
+.current::before{
+    content: "\2618";
+}
+
+.current::after{
+    content: "\2618";
+}
