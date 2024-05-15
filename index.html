@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- https://www.favicon.cc/ -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="images/icons8-ireland-48.png">
     <title>Exploring Ireland: A Study Abroad Journey</title>
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
@@ -30,18 +30,45 @@
     <!-- <h2>Failte go Baile Atha Cliath!</h2> -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="images/me.jpg" alt="This is a Picture of Me" width = '200'>
+        
+        <a href="images/me.JPG" data-lightbox="image-1" data-title="This is a Picture of Me"><img src="images/me.jpg" alt="This is a Picture of Me" width = '200'></a>
+        <!-- <img src="images/me.jpg" alt="This is a Picture of Me" width = '200'> -->
         <p>Welcome to my digital travel log documenting my study abroad adventure in Ireland! My journey takes me through the bustling streets of Dublin, the historic town of Kilkenny, the vibrant city of Galway, and the breathtaking Cliffs of Moher. Join me as I explore the rich culture, stunning landscapes, and warm hospitality of the Emerald Isle.</p>
     </section>
 
     <section id="gallery">
         <h2>Gallery</h2>
         <div class="image-grid">
-            <img src="images/Dublin-Castle.jpeg" alt="Dublin" width = "200" tabindex="0">
-            <img src="images/Kilkenny-Castle.jpeg" alt="Kilkenny" width = "200" tabindex="0">
-            <img src="images/Galway.jpeg" alt="Galway" width = "200" tabindex="0">
-            <img src="images/Cliffs-of-Moher.jpeg" alt="Cliffs of Moher" width = "200" tabindex="0">
-            <img src="images/Ireland-Castle.jpeg" alt="Castle in Ireland" width = "200" tabindex="0">
+            <figure tabindex="0">
+                <a href="images/Dublin-Castle.jpeg" data-lightbox="image-1" data-title="A picture of the Dublin Castle located in Dublin, Ireland. Only the turet portion of the original castle still exists. The rest is relatively newly constructed."><img src="images/Dublin-Castle.jpeg" alt="Dublin" width = "200"></a>
+                    <!-- <figcaption>A picture of the Dublin Castle located in Dublin, Ireland. Only the turet portion of the original castle still exists. The rest is relatively newly constructed. </figcaption> -->
+                </img>
+            </figure>
+
+            <figure>
+                <a href="images/Kilkenny-Castle.jpeg" data-lightbox="image-1" data-title="A picture of the Kilkenny castle located in Kilkenny, Ireland. A pretty fountain flowing in front of the castle with bright blue skies in the background."><img src="images/Kilkenny-Castle.jpeg" alt="Kilkenny" width = "200" tabindex="0"></a>
+                    <!-- <figcaption>A picture of the Kilkenny castle located in Kilkenny, Ireland. A pretty fountain flowing in front of the castle with bright blue skies in the background.</figcaption> -->
+                </img>
+            </figure>
+
+            <figure>
+                <a href="images/Galway.jpeg" data-lightbox="image-1" data-title="Colorful homes on the water in Galway."><img src="images/Galway.jpeg" alt="Galway" width = "200" tabindex="0"></a>
+                    <!-- <figcaption>Colorful homes on the water in Galway.</figcaption> -->
+                </img>
+            </figure>
+
+            <figure>
+                <a href="images/Cliffs-of-Moher.jpeg" data-lightbox="image-1" data-title="The beautiful Cliffs of Moher, overlooking the water. The cliffs are covered in grass and make a beautiul overlook for the Atlantic Ocean."><img src="images/Cliffs-of-Moher.jpeg" alt="Cliffs of Moher" width = "200" tabindex="0"></a>
+                    <!-- <figcaption>The beautiful Cliffs of Moher, overlooking the water. The cliffs are covered in grass and make a beautiul overlook for the Atlantic Ocean.</figcaption> -->
+                </img>
+            </figure>
+
+            <figure>
+                <a href="images/Ireland-Castle.jpeg" data-lightbox="image-1" data-title="A castle in Ireland in front of a beautiful pond. The castle is relatively old and run down but still makes for an incredibly scenic view."> <img src="images/Ireland-Castle.jpeg" alt="Castle in Ireland" width = "200" tabindex="0"></a>
+                    <!-- <figcaption>A castle in Ireland in front of a beautiful pond. The castle is relatively old and run down but still makes for an incredibly scenic view. </figcaption> -->
+                </img>
+            </figure>
+
         </div>
     </section>
 </main>
@@ -50,5 +77,6 @@
     
 </footer>
 
+<script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
