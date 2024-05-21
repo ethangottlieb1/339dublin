@@ -311,3 +311,37 @@ article:hover {
     overflow-x: scroll;
     /* flex-wrap: wrap; */
 }
+
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.clickable-image {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Show the description when the checkbox is checked */
+.toggle-checkbox:checked + .description {
+    display: block;
+}
