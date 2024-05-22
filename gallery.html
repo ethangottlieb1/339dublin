@@ -24,13 +24,15 @@
         <a href="gallery.html" class = "current">Gallery</a>
     </nav>
 
+    <div class = "controls">
     <button type="button" data-filter="all">All</button>
     <button type="button" data-filter=".category-food">Food and Drink</button>
     <button type="button" data-filter=".category-tours">Tours</button>
     <button type="button" data-filter=".category-activities">Activities</button>
     <button type="button" data-filter=".category-madrid">Madrid</button>
+    </div>
 
-    <div class="container">
+    <div class="gallery-container">
         <!-- MADRID -->
         <div class="mix category-madrid" data-order="1"><img src="images/alcalagate.jpeg"></div>
         <div class="mix category-madrid" data-order="2"><img src="images/barnacles.jpeg"></div>
@@ -135,7 +137,7 @@
 
         <script src="mixdist/mixitup.js"></script>
         <script>
-            var containerE1 = document.querySelector('.container');
+            var containerE1 = document.querySelector('.gallery-container');
             var mixer = mixitup(containerE1);
         </script>
     </body>

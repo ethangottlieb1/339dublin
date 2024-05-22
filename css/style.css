@@ -218,6 +218,12 @@ article:hover {
     text-align: center;
 }
 
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .madridnav {
     .current::before{
         content: "\01f1ea\01f1f8";
@@ -326,7 +332,7 @@ article:hover {
 }
 
 .clickable-image {
-    width: 300px;
+    /* width: 300px; */
     height: auto;
     cursor: pointer;
 }
@@ -341,7 +347,28 @@ article:hover {
     font-size: 16px;
 }
 
-/* Show the description when the checkbox is checked */
 .toggle-checkbox:checked + .description {
     display: block;
+}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; /* Remove the gap between grid items */
+    align-items: center;
+}
+.gallery-container > .mix {
+    margin: 0;
+    padding: 0;
+}
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: black;
+    border-style: double;
+    border-width: 5px;
 }
