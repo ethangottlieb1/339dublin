@@ -319,7 +319,10 @@ article:hover {
 }
 
 
-
+.blog-pic:focus {
+    outline: 2px solid #d08b15;
+    outline-offset: 2px;
+}
 
 
 
